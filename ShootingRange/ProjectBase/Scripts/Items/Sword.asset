@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c92370efd2d95d4d8193ed56df7824a, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  isStackable: 0
+  ItemName: Swrod
+  ItemID: 15
+  ItemObject: {fileID: 8740575833560226712, guid: 99f0028d75494e44f9d6259b05b50000, type: 3}
+  ItemUiImage: {fileID: 21300000, guid: 72efc66fe5b05a24f96b5a7c28534086, type: 3}
