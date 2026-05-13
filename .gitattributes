@@ -1,0 +1,7 @@
+* text=auto
+
+*.cs text
+*.shader text
+*.unity text
+*.prefab text
+*.mat text
