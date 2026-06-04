@@ -53,13 +53,17 @@
     <Compile Include="Assets\ProjectBase\Scripts\Items\Ball.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Bases\ItemBase.cs" />
+    <Compile Include="Assets\ProjectBase\Scripts\Bases\GunBase.cs" />
+    <Compile Include="Assets\ProjectBase\Scripts\Items\Guns\Gun.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Player\PlayerFPSCamera.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\ScriptbleObjects\ItemData.cs" />
+    <Compile Include="Assets\ProjectBase\Scripts\Interfaces\IGun.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Items\Sword.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Interfaces\IInteractble.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Player\Inventory\PlayerInventory.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Bases\InteractbleBase.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Environment\Box.cs" />
+    <Compile Include="Assets\ProjectBase\Scripts\Items\Guns\Pistol.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Player\Inventory\PlayerInv_Ui_Handler.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Player\Interaction\Player_Interaction.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Items\HandGranade.cs" />

@@ -37,4 +37,9 @@ public abstract class ItemBase : InteractbleBase
                 Destroy(gameObject);
         }
     }
+
+    public virtual void UseItem()
+    {
+        Debug.Log("Used : " + gameObject.name);
+    }
 }

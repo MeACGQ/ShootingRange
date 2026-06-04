@@ -35,6 +35,8 @@ public class Player_Interaction : MonoBehaviour
         action.PlayerMoves.Interactions.performed += ctx => interact();
 
         action.PlayerMoves.DropItem.performed += ctx => DropItem();
+
+
     }
 
     private void FixedUpdate()

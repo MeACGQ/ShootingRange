@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PortProjects\\ShootingRange\\ShootingRange\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\portprojects\\shootingrange\\shootingrange\\assets\\projectbase\\scripts\\bases\\itembase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\projectbase\\scripts\\bases\\itembase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\portprojects\\shootingrange\\shootingrange\\assets\\projectbase\\scripts\\items\\guns\\pistol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\projectbase\\scripts\\items\\guns\\pistol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\portprojects\\shootingrange\\shootingrange\\assets\\projectbase\\scripts\\bases\\gunbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\projectbase\\scripts\\bases\\gunbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\portprojects\\shootingrange\\shootingrange\\assets\\projectbase\\scripts\\player\\inventory\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\projectbase\\scripts\\player\\inventory\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Items\\Guns\\Pistol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\ProjectBase\\Scripts\\Items\\Guns\\Pistol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\portprojects\\shootingrange\\shootingrange\\assets\\projectbase\\scripts\\interfaces\\igun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\projectbase\\scripts\\interfaces\\igun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\portprojects\\shootingrange\\shootingrange\\assets\\projectbase\\scripts\\scriptbleobjects\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\projectbase\\scripts\\scriptbleobjects\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\portprojects\\shootingrange\\shootingrange\\assets\\projectbase\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\projectbase\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IGun.cs",
+              "DocumentMoniker": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Interfaces\\IGun.cs",
+              "RelativeDocumentMoniker": "Assets\\ProjectBase\\Scripts\\Interfaces\\IGun.cs",
+              "ToolTip": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Interfaces\\IGun.cs",
+              "RelativeToolTip": "Assets\\ProjectBase\\Scripts\\Interfaces\\IGun.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T21:30:45.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GunBase.cs",
+              "DocumentMoniker": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Bases\\GunBase.cs",
+              "RelativeDocumentMoniker": "Assets\\ProjectBase\\Scripts\\Bases\\GunBase.cs",
+              "ToolTip": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Bases\\GunBase.cs",
+              "RelativeToolTip": "Assets\\ProjectBase\\Scripts\\Bases\\GunBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T21:25:09.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ItemBase.cs",
+              "DocumentMoniker": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Bases\\ItemBase.cs",
+              "RelativeDocumentMoniker": "Assets\\ProjectBase\\Scripts\\Bases\\ItemBase.cs",
+              "ToolTip": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Bases\\ItemBase.cs",
+              "RelativeToolTip": "Assets\\ProjectBase\\Scripts\\Bases\\ItemBase.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T12:39:16.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ItemData.cs",
+              "DocumentMoniker": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\ScriptbleObjects\\ItemData.cs",
+              "RelativeDocumentMoniker": "Assets\\ProjectBase\\Scripts\\ScriptbleObjects\\ItemData.cs",
+              "ToolTip": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\ScriptbleObjects\\ItemData.cs",
+              "RelativeToolTip": "Assets\\ProjectBase\\Scripts\\ScriptbleObjects\\ItemData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T12:36:47.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\ProjectBase\\Scripts\\Player\\PlayerMovement.cs",
+              "ToolTip": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\ProjectBase\\Scripts\\Player\\PlayerMovement.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T20:59:51.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerInventory.cs",
+              "DocumentMoniker": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Player\\Inventory\\PlayerInventory.cs",
+              "RelativeDocumentMoniker": "Assets\\ProjectBase\\Scripts\\Player\\Inventory\\PlayerInventory.cs",
+              "ToolTip": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Player\\Inventory\\PlayerInventory.cs",
+              "RelativeToolTip": "Assets\\ProjectBase\\Scripts\\Player\\Inventory\\PlayerInventory.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwCEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T11:57:54.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pistol.cs",
+              "DocumentMoniker": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Items\\Guns\\Pistol.cs",
+              "RelativeDocumentMoniker": "Assets\\ProjectBase\\Scripts\\Items\\Guns\\Pistol.cs",
+              "ToolTip": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Items\\Guns\\Pistol.cs",
+              "RelativeToolTip": "Assets\\ProjectBase\\Scripts\\Items\\Guns\\Pistol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T22:23:51.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pistol.cs",
+              "DocumentMoniker": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Items\\Guns\\Pistol.cs",
+              "RelativeDocumentMoniker": "Assets\\ProjectBase\\Scripts\\Items\\Guns\\Pistol.cs",
+              "ToolTip": "D:\\PortProjects\\ShootingRange\\ShootingRange\\Assets\\ProjectBase\\Scripts\\Items\\Guns\\Pistol.cs",
+              "RelativeToolTip": "Assets\\ProjectBase\\Scripts\\Items\\Guns\\Pistol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T21:23:55.913Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

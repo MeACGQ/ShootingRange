@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c92370efd2d95d4d8193ed56df7824a, type: 3}
+  m_Name: Pistol
+  m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  isUseble: 1
+  isStackable: 0
+  ItemName: pistol
+  ItemID: 3
+  ItemObject: {fileID: 7688590226235161502, guid: b0abdfe4dcd75774db96ba45f1710f2f, type: 3}
+  ItemUiImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

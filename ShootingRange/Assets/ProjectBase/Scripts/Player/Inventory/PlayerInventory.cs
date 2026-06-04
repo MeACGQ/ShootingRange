@@ -12,6 +12,8 @@ public class PlayerInventory : MonoBehaviour
     int currentSlot;
     [SerializeField] GameObject holdReferance;
 
+    GameObject holdingObject;
+
     private void Awake()
     {
         actions = new PlayerInputAction();
@@ -26,6 +28,29 @@ public class PlayerInventory : MonoBehaviour
     {
         actions.Enable();
 
+        actions.PlayerMoves.Fire.performed += ctx =>
+        {
+            if (items[currentSlot] == null)
+                return;
+
+            if (items[currentSlot].isUseble)
+            {
+                holdingObject.GetComponent<ItemBase>().UseItem();
+            }
+            else
+                return;
+        };
+
+        actions.PlayerMoves.Reload.performed += ctx =>
+        {
+            if (holdingObject.CompareTag("Gun"))
+            {
+                holdingObject.GetComponent<GunBase>().Reload();
+            }
+            else
+                Debug.Log("yok.");
+        };
+
         actions.PlayerMoves.Slots.performed += ctx =>
         {
             currentSlot = int.Parse(ctx.control.name) - 1;
@@ -36,8 +61,6 @@ public class PlayerInventory : MonoBehaviour
         };
     }
 
-
-    GameObject holdingObject;
     private void HighlightItem(int slotNumber)
     {
         if (holdingObject != null)
@@ -49,13 +72,12 @@ public class PlayerInventory : MonoBehaviour
         {
             holdingObject = Instantiate(items[slotNumber].ItemObject,
                 holdReferance.transform.position,
-                Quaternion.identity,
+                holdReferance.transform.rotation,
                 holdReferance.transform);
             
             holdingObject.GetComponent<Rigidbody>().useGravity = false;
             holdingObject.GetComponent<Collider>().enabled = false;
         }
-
     }
 
     public bool AddItemToInv(ItemData itemData)
@@ -109,7 +131,6 @@ public class PlayerInventory : MonoBehaviour
 
             slotStack[currentSlot] -= 1;
 
-
             if (slotStack[currentSlot] == 0)
             {
                 items[currentSlot] = null;
@@ -131,4 +152,6 @@ public class PlayerInventory : MonoBehaviour
         Inv_Ui_Handler.WriteStackCount(currentSlot, slotStack[currentSlot]);
         HighlightItem(currentSlot);
     }
+
+
 }
