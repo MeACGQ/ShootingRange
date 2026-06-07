@@ -35,8 +35,6 @@ public class Player_Interaction : MonoBehaviour
         action.PlayerMoves.Interactions.performed += ctx => interact();
 
         action.PlayerMoves.DropItem.performed += ctx => DropItem();
-
-
     }
 
     private void FixedUpdate()
@@ -96,13 +94,13 @@ public class Player_Interaction : MonoBehaviour
         {
             Vector3 dropPos = hit.point;
 
-            inventory.DropItemFromInv(dropPos, inventory.GetInv_Ui_Handler());
+            inventory.DropItemFromInv(dropPos);
         }
         else
         {
             Vector3 dropPos = ray.origin + ray.direction * rayDistance;
 
-            inventory.DropItemFromInv(dropPos, inventory.GetInv_Ui_Handler());
+            inventory.DropItemFromInv(dropPos);
         }
     }
 }

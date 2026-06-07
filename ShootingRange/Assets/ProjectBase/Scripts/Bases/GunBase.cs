@@ -4,15 +4,22 @@ using UnityEngine;
 public abstract class GunBase : ItemBase, IGun
 {
     [Header("Gun Settings")]
-    [SerializeField] private int totalBullets;
-    [SerializeField] private int magazineCapacity;
-    [SerializeField] private int currentBullets;
+    [SerializeField] public int totalBullets;
+    [SerializeField] public int magazineCapacity;
+    [SerializeField] public int currentBullets;
 
 
     [Header("Fire Settings")]
     [SerializeField] private Transform firePoint;
     [SerializeField] private float fireDistance;
     [SerializeField] bool seeGunRay = false;
+
+    Animator gunAnimator;
+
+    private void Start()
+    {
+        gunAnimator = GetComponent<Animator>();
+    }
 
     public override void UseItem()
     {
@@ -35,6 +42,9 @@ public abstract class GunBase : ItemBase, IGun
             }
 
             currentBullets--;
+
+            Debug.Log(currentBullets + " " + totalBullets);
+            Debug.Log("Fire girildi");
         }
     }
     public virtual void Reload()
@@ -52,6 +62,7 @@ public abstract class GunBase : ItemBase, IGun
 
             currentBullets += magazine;
         }
+        Debug.Log("Mermi : " + totalBullets);
     }
 
     private void FixedUpdate()

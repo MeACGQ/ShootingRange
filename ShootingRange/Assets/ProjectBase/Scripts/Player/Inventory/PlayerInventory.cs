@@ -3,80 +3,57 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    PlayerInputAction actions;
     PlayerInv_Ui_Handler Inv_Ui_Handler;
+    HighlightItem highlightItem;
 
     [SerializeField] private ItemData[] items = new ItemData[5];
+    [SerializeField] private WeaponRunTimeState[] weaponStates = new WeaponRunTimeState[5];
+
     [SerializeField] private int[] slotStack = new int[5];
 
+    [SerializeField] public GameObject holdingObject;
+
     int currentSlot;
-    [SerializeField] GameObject holdReferance;
-
-    GameObject holdingObject;
-
-    private void Awake()
-    {
-        actions = new PlayerInputAction();
-    }
 
     private void Start()
     {
         Inv_Ui_Handler = GetComponent<PlayerInv_Ui_Handler>();
+        highlightItem = GetComponent<HighlightItem>();
     }
 
-    private void OnEnable()
+    public void UseItem()
     {
-        actions.Enable();
+        if (items[currentSlot] == null)
+            return;
 
-        actions.PlayerMoves.Fire.performed += ctx =>
+        if (items[currentSlot].isUseble)
         {
-            if (items[currentSlot] == null)
-                return;
-
-            if (items[currentSlot].isUseble)
-            {
-                holdingObject.GetComponent<ItemBase>().UseItem();
-            }
-            else
-                return;
-        };
-
-        actions.PlayerMoves.Reload.performed += ctx =>
-        {
-            if (holdingObject.CompareTag("Gun"))
-            {
-                holdingObject.GetComponent<GunBase>().Reload();
-            }
-            else
-                Debug.Log("yok.");
-        };
-
-        actions.PlayerMoves.Slots.performed += ctx =>
-        {
-            currentSlot = int.Parse(ctx.control.name) - 1;
-
-            Inv_Ui_Handler.selectSlot(currentSlot);
-
-            HighlightItem(currentSlot);
-        };
-    }
-
-    private void HighlightItem(int slotNumber)
-    {
-        if (holdingObject != null)
-        {
-            Destroy(holdingObject);
+            holdingObject.GetComponent<ItemBase>().UseItem();
         }
+        else
+            return;
+    }
 
-        if (items[slotNumber] != null)
+    public void ChangeSlot(int _currentSlot)
+    {
+        SaveCurrentWeaponState();
+
+        currentSlot = _currentSlot;
+        Inv_Ui_Handler.selectSlot(currentSlot);
+
+        if (holdingObject != null)
+            highlightItem.DestroyItem();
+
+        if (items[currentSlot] == null) return;
+
+        holdingObject = highlightItem.Highlight(items[currentSlot].ItemObject);
+
+        if (weaponStates[currentSlot] != null)
         {
-            holdingObject = Instantiate(items[slotNumber].ItemObject,
-                holdReferance.transform.position,
-                holdReferance.transform.rotation,
-                holdReferance.transform);
-            
-            holdingObject.GetComponent<Rigidbody>().useGravity = false;
-            holdingObject.GetComponent<Collider>().enabled = false;
+            GunBase gunScript = holdingObject.GetComponent<GunBase>();
+
+            gunScript.currentBullets = weaponStates[currentSlot].currentBullet;
+            gunScript.totalBullets = weaponStates[currentSlot].totalBullet;
         }
     }
 
@@ -89,6 +66,16 @@ public class PlayerInventory : MonoBehaviour
             items[currentSlot] = itemData;
 
             slotStack[currentSlot] += 1;
+
+            if (itemData.ItemObject.CompareTag("Gun"))
+            {
+                weaponStates[currentSlot] = new WeaponRunTimeState();
+
+                GunBase prefabGunScript = itemData.ItemObject.GetComponent<GunBase>();
+
+                weaponStates[currentSlot].currentBullet = prefabGunScript.magazineCapacity;
+                weaponStates[currentSlot].totalBullet = prefabGunScript.totalBullets;
+            }
         }
 
         else if (items[currentSlot] == itemData && itemData.isStackable)
@@ -108,19 +95,14 @@ public class PlayerInventory : MonoBehaviour
         Inv_Ui_Handler.SelectItemImage(currentSlot, itemData);
         Inv_Ui_Handler.WriteStackCount(currentSlot, slotStack[currentSlot]);
 
-        HighlightItem(currentSlot);
+        holdingObject = highlightItem.Highlight(items[currentSlot].ItemObject);
 
         itemAddSuccesful = true;
 
         return itemAddSuccesful;
     }
 
-    public PlayerInv_Ui_Handler GetInv_Ui_Handler()
-    {
-        return Inv_Ui_Handler;
-    }
-
-    public void DropItemFromInv(Vector3 dropPoint, PlayerInv_Ui_Handler ınv_Ui_Handler)
+    public void DropItemFromInv(Vector3 dropPoint)
     {
         if (items[currentSlot] == null)
             return;
@@ -147,11 +129,21 @@ public class PlayerInventory : MonoBehaviour
             slotStack[currentSlot] -= 1;
 
             Inv_Ui_Handler.RemoveItemImage(currentSlot);
+
+            highlightItem.DestroyItem();
         }
 
         Inv_Ui_Handler.WriteStackCount(currentSlot, slotStack[currentSlot]);
-        HighlightItem(currentSlot);
     }
 
+    private void SaveCurrentWeaponState()
+    {
+        if (holdingObject != null && weaponStates[currentSlot] != null)
+        {
+            GunBase gunScript = holdingObject.GetComponent<GunBase>();
 
+            weaponStates[currentSlot].currentBullet = gunScript.currentBullets;
+            weaponStates[currentSlot].totalBullet = gunScript.totalBullets;
+        }
+    }
 }

@@ -21,8 +21,6 @@ public abstract class ItemBase : InteractbleBase
 
     public override void Interact()
     {
-        Debug.Log("Interact edildi : " + itemData.ItemName);
-
         PlayerInventory inv = FindFirstObjectByType<PlayerInventory>();
 
         if (itemData == null)
@@ -37,7 +35,6 @@ public abstract class ItemBase : InteractbleBase
                 Destroy(gameObject);
         }
     }
-
     public virtual void UseItem()
     {
         Debug.Log("Used : " + gameObject.name);
