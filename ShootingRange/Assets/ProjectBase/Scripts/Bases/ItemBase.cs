@@ -10,8 +10,6 @@ public abstract class ItemBase : InteractbleBase
 
     private void Start()
     {
-        gameObject.AddComponent<Rigidbody>();
-
         gameObject.layer = 6;
 
         ItemName = itemData.ItemName;

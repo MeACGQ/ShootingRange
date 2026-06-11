@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2588076281993285033}
   - component: {fileID: -8070116875865792608}
   - component: {fileID: 318291473240770631}
+  - component: {fileID: 4840962702974506790}
+  - component: {fileID: -1923049470986904042}
   - component: {fileID: 5616914483733782056}
   - component: {fileID: 6524491577389795583}
   m_Layer: 6
@@ -96,12 +98,38 @@ MonoBehaviour:
   ItemPrefab: {fileID: 0}
   ItemName: 
   ID: 0
+  magazine: {fileID: -1923049470986904042}
+  muzzle: {fileID: 4840962702974506790}
   totalBullets: 40
-  magazineCapacity: 10
-  currentBullets: 10
-  firePoint: {fileID: 120794137691158267}
   fireDistance: 15
+--- !u!114 &4840962702974506790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15256424710962322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb679bd1586447488684237c6634b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Muzzle
   seeGunRay: 1
+  firePoint: {fileID: 6038890998163301169}
+--- !u!114 &-1923049470986904042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15256424710962322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c3e10c4be31cc4cac7da41c2e583e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Magazine
+  currentBullets: 0
+  capacity: 15
 --- !u!54 &5616914483733782056
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -137,7 +165,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15256424710962322}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: d9aac567a1001b541a24a623a230dae3, type: 2}
   m_CullingMode: 1

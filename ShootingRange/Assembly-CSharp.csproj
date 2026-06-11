@@ -51,13 +51,15 @@
   <ItemGroup>
     <Compile Include="Assets\ProjectBase\Scripts\Player\PlayerInputHandler.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
+    <Compile Include="Assets\ProjectBase\Scripts\Player\Inventory\Gun\WeaponRunTimeState.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Items\Ball.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Bases\ItemBase.cs" />
+    <Compile Include="Assets\ProjectBase\Scripts\Player\Inventory\Gun\Muzzle.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Bases\GunBase.cs" />
-    <Compile Include="Assets\ProjectBase\Scripts\Player\Inventory\WeaponRunTimeState.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Items\Guns\Gun.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Player\PlayerFPSCamera.cs" />
+    <Compile Include="Assets\ProjectBase\Scripts\Player\Inventory\Gun\Magazine.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\ScriptbleObjects\ItemData.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Interfaces\IGun.cs" />
     <Compile Include="Assets\ProjectBase\Scripts\Items\Sword.cs" />
@@ -632,6 +634,14 @@
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>Library\PackageCache\com.unity.collections@aea9d3bd5e19\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+      <HintPath>D:\Unity\6000.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+      <HintPath>D:\Unity\6000.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">

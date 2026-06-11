@@ -51,8 +51,9 @@ public class PlayerInventory : MonoBehaviour
         if (weaponStates[currentSlot] != null)
         {
             GunBase gunScript = holdingObject.GetComponent<GunBase>();
+            Magazine magazine = holdingObject.GetComponent<Magazine>();
 
-            gunScript.currentBullets = weaponStates[currentSlot].currentBullet;
+            magazine.currentBullets = weaponStates[currentSlot].currentBullet;
             gunScript.totalBullets = weaponStates[currentSlot].totalBullet;
         }
     }
@@ -72,8 +73,9 @@ public class PlayerInventory : MonoBehaviour
                 weaponStates[currentSlot] = new WeaponRunTimeState();
 
                 GunBase prefabGunScript = itemData.ItemObject.GetComponent<GunBase>();
+                Magazine magazine = itemData.ItemObject.GetComponent<Magazine>();
 
-                weaponStates[currentSlot].currentBullet = prefabGunScript.magazineCapacity;
+                weaponStates[currentSlot].currentBullet = magazine.capacity;
                 weaponStates[currentSlot].totalBullet = prefabGunScript.totalBullets;
             }
         }
@@ -141,8 +143,9 @@ public class PlayerInventory : MonoBehaviour
         if (holdingObject != null && weaponStates[currentSlot] != null)
         {
             GunBase gunScript = holdingObject.GetComponent<GunBase>();
+            Magazine magazine = holdingObject.GetComponent<Magazine>();
 
-            weaponStates[currentSlot].currentBullet = gunScript.currentBullets;
+            weaponStates[currentSlot].currentBullet = magazine.capacity;
             weaponStates[currentSlot].totalBullet = gunScript.totalBullets;
         }
     }

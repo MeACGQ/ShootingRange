@@ -20,8 +20,6 @@ public class HighlightItem : MonoBehaviour
 
     public void DestroyItem()
     {
-
-
         Destroy(holdingItem);
     }
 }
